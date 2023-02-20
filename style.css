@@ -1,0 +1,20 @@
+body {
+    background-image: url(img/background.jpg);
+    background-attachment: fixed;
+}
+
+.intro_chart {
+    border-radius: 50px;
+    background-color: rgba(19, 18, 18, 0.5);
+}
+
+#profile_img {
+    border-radius: 50%;
+    border: double 5px rgb(6, 5, 66);
+    width: 500px;
+    height: 500px;
+}
+
+.about_container {
+    background-color: rgba(19, 18, 18, 0.5);
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeanM-Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container-fluid position-relative ">
+
+        <nav class="navbar bg-transparent position-absolute left-0 start-0 ">
+            <div class="container">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="2" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Mi portafolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-light" href="#">Proyectos</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-light" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="intro_chart d-flex align-items-center justify-content-center mt-4 mb-5 border border-secondary">
+                <div class=" intro_chart container d-flex align-items-center justify-content-center">
+                    <img id="profile_img" class="img-fluid mt-3 mb-3" src="img/programmer-1653351_1280.png" alt="Profile picture">
+                </div>
+                <div class="container description text-center">
+                    <h1 class="mb-5">
+                        Bienvenidxs a Mi Portafolio
+                    </h1>
+                    <h2>
+                        Leandro M. Muñoz
+                    </h2>
+                    <h3>Licenciado en Sistemas de Información</h3>
+                </div>
+            </div>
+            <div class="about_container container about mt-4 mb-4 border border-light rounded p-3">
+                <div class="d-flex justify-content-between">
+                    <h3>Acerca de mi</h3>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#add_about"><i class="fa-regular fa-pen-to-square"></i></button>
+                    <div class="modal fade" id="add_about" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-dark">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar "Acerca de"</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="mb-3">
+                                            <textarea class="form-control" id="text_area_about" rows="3"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" id="save_about" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="inner_about">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum adipisci rerum, voluptate distinctio,
+                        aperiam praesentium reprehenderit autem veniam ratione assumenda omnis debitis nisi facere atque
+                        suscipit quod pariatur dolorem. Distinctio</p>
+                </div>
+            </div>
+        </div>
+
+        <main class="container">
+            <div id="experiences">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h2 class="mt-4 mb-4">Experiencias</h2>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add_experiences"><i
+                            class="fa-solid fa-plus"></i></button>
+                    <div class="modal fade" id="add_experiences" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog bg-dark">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Experiencias"</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="mb-3">
+                                            <div class="mb-3">
+                                                <label for="exp_title" class="form-label">Título</label>
+                                                <input type="text" class="form-control" id="exp_title">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exp_place" class="form-label">Empresa</label>
+                                                <input type="text" class="form-control" id="exp_place">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exp_type" class="form-label">Tipo de posición</label>
+                                                <input type="text" class="form-control" id="exp_type">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exp_text" class="form-l">Descripción</label>
+                                                <textarea class="form-control" id="exp_text" rows="3"></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exp_begin_time" class="form-label">Fecha de inicio</label>
+                                                <input type="text" class="form-control" id="exp_begin_time">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exp_end_time" class="form-label">Fecha de finalización</label>
+                                                <input type="text" class="form-control" id="exp_end_time">
+                                            </div>
+                                            
+                                            <div class="mb-3">
+                                                <label for="exp_location" class="form-label">Lugar</label>
+                                                <input type="text" class="form-control" id="exp_location">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" id="save_exp" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="education">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h2 class="mt-4 mb-4">Educación</h2>
+                    <a class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
+                </div>
+            </div>
+
+        </main>
+
+        <div class="container ">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0  text-light"> &copy; 2023 Lean M - Portafolio</p>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Proyectos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contacto</a></li>
+                </ul>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1c0e10b8f1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
