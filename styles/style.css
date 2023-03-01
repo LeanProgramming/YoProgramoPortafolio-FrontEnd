@@ -1,5 +1,5 @@
 body {
-    background-image: url(img/background.jpg);
+    background-image: url(/estatico/img/background.jpg);
     background-attachment: fixed;
 }
 
@@ -18,3 +18,4 @@ body {
 .about_container {
     background-color: rgba(19, 18, 18, 0.5);
 }
+
