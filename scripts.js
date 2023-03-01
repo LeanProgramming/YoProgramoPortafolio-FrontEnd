@@ -1,11 +1,11 @@
-let inner_about = document.getElementById('inner_about');
+/*let inner_about = document.getElementById('inner_about');
 
 let about_button = document.getElementById('save_about');
 about_button.addEventListener('click', () => {
     let text = document.getElementById('text_area_about').value;
     inner_about.innerHTML = `<p>${text}</p>`;
     document.getElementById('text_area_about').value = "";
-});
+});*/
 
 
 let experiencias = [
@@ -38,10 +38,6 @@ card.innerHTML = `
 <div class="card-body">
     <div class="d-flex justify-content-between">
         <h5 class="card-title text-warning">${exp.title}</h5>
-        <div>
-        <a class="btn btn-secondary"><i class="fa-regular fa-pen-to-square"></i></a>
-        <a class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-        </div>
     </div>
     <h6 class="card-subtitle mb-2 ms-2 text-secondary">${exp.place} - ${exp.type}</h6>
     <p class="card-text ms-2">${exp.descp}</p>
@@ -54,7 +50,7 @@ experiencesDiv.appendChild(card);
 });
 
 
-let exp_button = document.getElementById('save_exp');
+/*let exp_button = document.getElementById('save_exp');
 exp_button.addEventListener('click', () => {
     let card = document.createElement('div');
     card.setAttribute('class', 'card mt-4 mb-4 border border-light rounded');
@@ -86,7 +82,7 @@ exp_button.addEventListener('click', () => {
     document.getElementById('exp_location').value = "";
 
 });
-
+*/
 
 let educacion = [
     {
@@ -114,10 +110,6 @@ educacion.forEach(educ => {
     <div class="card-body">
         <div class="d-flex justify-content-between">
             <h5 class="card-title text-warning">${educ.title}</h5>
-            <div>
-            <a class="btn btn-secondary"><i class="fa-regular fa-pen-to-square"></i></a>
-            <a class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-            </div>
         </div>
         <h6 class="card-subtitle mb-2 mt-2 ms-2 ">${educ.place}</h6>
         <p class="card-text ms-2 text-secondary">${educ.begin_time} - ${educ.end_time}
@@ -126,5 +118,4 @@ educacion.forEach(educ => {
     `;
 
     educationDiv.appendChild(card);
-    console.log(educacion)
 });

@@ -13,40 +13,59 @@
 
 <body class="bg-dark text-light">
     <div class="container-fluid position-relative ">
+        <div class="container">
+            <header>
+                <div class="px-3 py-2 text-bg-dark">
+                    <div class="container">
+                        <div
+                            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                            <a href="/"
+                                class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                                    <use xlink:href="#bootstrap" />
+                                </svg>
+                            </a>
 
-        <nav class="navbar bg-transparent position-absolute left-0 start-0 ">
-            <div class="container">
-                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="2" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Mi portafolio</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body ">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link text-light" href="#">Proyectos</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link text-light" href="#">Contacto</a>
-                            </li>
-                        </ul>
+                            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                                <li>
+                                    <a href="#" class="nav-link text-secondary">
+                                        <div class="bi d-block mx-auto mb-1" style="width:24px; height:24px">
+                                            <i class=" fa-solid fa-house"></i>
+                                        </div>
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-white">
+                                        <div class="bi d-block mx-auto mb-1" style="width:24px; height:24px">
+                                            <i class="fa-solid fa-folder"></i>
+                                        </div>
+                                        Proyectos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-white">
+                                        <div class="bi d-block mx-auto mb-1" style="width:24px; height:24px">
+                                            <i class="fa-solid fa-address-book"></i>
+                                        </div>
+                                        Contacto
+                                    </a>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-light text-dark me-2 mt-3">Login</button>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-        </nav>
 
-        <div class="container">
+            </header>
+
             <div class="intro_chart d-flex align-items-center justify-content-center mt-4 mb-5 border border-secondary">
                 <div class=" intro_chart container d-flex align-items-center justify-content-center">
-                    <img id="profile_img" class="img-fluid mt-3 mb-3" src="img/programmer-1653351_1280.png" alt="Profile picture">
+                    <img id="profile_img" class="img-fluid mt-3 mb-3" src="img/logo.JPG"
+                        alt="Profile picture">
                 </div>
                 <div class="container description text-center">
                     <h1 class="mb-5">
@@ -61,7 +80,7 @@
             <div class="about_container container about mt-4 mb-4 border border-light rounded p-3">
                 <div class="d-flex justify-content-between">
                     <h3>Acerca de mi</h3>
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
                         data-bs-target="#add_about"><i class="fa-regular fa-pen-to-square"></i></button>
                     <div class="modal fade" id="add_about" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
@@ -86,11 +105,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+                    </div> -->
                 </div>
                 <div id="inner_about">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum adipisci rerum, voluptate distinctio,
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum adipisci rerum, voluptate
+                        distinctio,
                         aperiam praesentium reprehenderit autem veniam ratione assumenda omnis debitis nisi facere atque
                         suscipit quod pariatur dolorem. Distinctio</p>
                 </div>
@@ -101,7 +120,7 @@
             <div id="experiences">
                 <div class="d-flex align-items-center justify-content-between">
                     <h2 class="mt-4 mb-4">Experiencias</h2>
-                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add_experiences"><i
+                    <!-- <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add_experiences"><i
                             class="fa-solid fa-plus"></i></button>
                     <div class="modal fade" id="add_experiences" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog bg-dark">
@@ -135,10 +154,11 @@
                                                 <input type="text" class="form-control" id="exp_begin_time">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="exp_end_time" class="form-label">Fecha de finalización</label>
+                                                <label for="exp_end_time" class="form-label">Fecha de
+                                                    finalización</label>
                                                 <input type="text" class="form-control" id="exp_end_time">
                                             </div>
-                                            
+
                                             <div class="mb-3">
                                                 <label for="exp_location" class="form-label">Lugar</label>
                                                 <input type="text" class="form-control" id="exp_location">
@@ -153,13 +173,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
+            
             <div id="education">
                 <div class="d-flex align-items-center justify-content-between">
                     <h2 class="mt-4 mb-4">Educación</h2>
-                    <a class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
+                    <!-- <a class="btn btn-success"><i class="fa-solid fa-plus"></i></a> -->
                 </div>
             </div>
 
